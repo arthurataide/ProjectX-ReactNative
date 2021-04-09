@@ -17,11 +17,9 @@ After finish we need to run and install CocoaPods dependencies.
 
 `cd ios && pod install`
 
-Finishing run `cd ..` to go back to the project root.
+Run `cd ..` to go back to the project root.
 
-`cd ..`
-
-Run the Project. 
+`cd ..` 
 
 With finder, go the ProjectX-ReactNative/iOS and open the file Project.xcworkspace.
 
