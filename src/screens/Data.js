@@ -65,7 +65,7 @@ export default function App({navigation}) {
     <View style={styles.container}>
       <View style={styles.newContainer}>
         <Icon name={"location"} size={100} color={theme.COLORS.PRIMARY} style={styles.icon}/>
-        <View style={{flexDirection: 'row', alignSelf:'center', padding: 10, marginTop: 30}}>
+        <View style={{flexDirection: 'row', alignSelf:'center', padding: 10, marginTop: 20}}>
           <Text>{location.city}, </Text>
           <Text>{location.region_name}, </Text>
           <Text>{location.country_name}</Text>
@@ -76,7 +76,7 @@ export default function App({navigation}) {
         </View>
       </View>
       <Text style={styles.title}>Selected Items</Text>
-      <View style={styles.newContainer}>
+      <View style={styles.newContainerFlat}>
         <FlatList
             showsVerticalScrollIndicator={false}
             data={items}
@@ -95,7 +95,11 @@ const styles = StyleSheet.create({
     },
     newContainer: {
       flex:1,
-      padding: 20,
+      padding: 30,
+    },
+    newContainerFlat: {
+      flex: 2,
+      padding: 20
     },
     card: {
       flex: 1,
